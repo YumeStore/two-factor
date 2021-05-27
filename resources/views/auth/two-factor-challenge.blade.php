@@ -5,12 +5,12 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Confirm Password') }}</div>
+                <div class="card-header">{{ __('Código de confirmação') }}</div>
 
                 <div class="card-body">
-                    {{ __('Por favor repita sua senha antes de fazer essa ou outra alteração.') }}
+                    {{ __('Por favor entre com a autentiação') }}
 
-                    <form method="POST" action="{{ route('password.confirm') }}">
+                    <form method="POST" action="{{ route('two-factor-authentication') }}">
                         @csrf
 
                         <div class="form-group row">
