@@ -26,7 +26,7 @@
                             @method('DELETE')
 
                             <div class="p-5">
-                                {{!! auth()->user()->twoFactorQrCodeSvg() !!}}
+                                {!! auth()->user()->twoFactorQrCodeSvg() !!}
                             </div>
 
                             <button class="btn btn-danger">Desativar código de verificação</button>
